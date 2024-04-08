@@ -9,50 +9,126 @@ body {
 h2 {
   color:white;
 }
+  h3 {
+  color:white;
+}
 p {
   color:white;
 }
-  .topnav {
-  overflow: hidden;
-  background-color: #388cff;
-}
+	.navbar {
+		background-color: #333;
+		position: relative;
+		z-index: 999;
+	}
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+	.navbar ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+    background: #386de8;
+	}
 
-.topnav a:hover {
-  background-color: #75a4e6;
-  color: black;
-}
+	.navbar li {
+		display: inline-block;
+	}
 
-.topnav a.active {
-  background-color: #0a04aa;
-  color: white;
+	.navbar li a {
+		color: white;
+		display: block;
+		padding: 10px 20px;
+		text-decoration: none;
+	}
+
+	/* Style the dropdown menu */
+	.navbar ul ul {
+		position: absolute;
+		top: 100%;
+		display: none;
+	}
+
+	.navbar ul ul li {
+		display: block;
+	}
+
+	.navbar li:hover ul {
+		display: block;
+	}
+
+	/* Change the background color of dropdown links on hover */
+	.navbar ul ul li a:hover {
+		background-color: #2759cc;
+        
+	}
+    .navbar li  a:hover, .navbar .navbar > li > a:focus {
+    background-color: #2759cc;
+    color: white;
 }
 </style>
 </head>
 <body>
-<div class="topnav">
-  <a class="active" href="./index.html">Home</a>
-  <a href="./Subnautica.html">Subnautica</a>
-  <a href="./Belowzero.html">Belowzero</a>
-  <a href="#about">About</a>
+
+<nav class="navbar">
+	<ul>
+		<li><a href="./index.html">Home</a></li>
+		<li>
+			<a href="#">Subnautica</a>
+			<ul>
+				<li><a href="./snlegacy.html">Legacy</a></li>
+				<li><a href="#">LivingLarge</a></li>
+				<li><a href="#">TestBuilds</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">BelowZero</a>
+			<ul>
+				<li><a href="./Belowzero.html">Legacy</a></li>
+				<li><a href="#">Stable</a></li>
+				<li><a href="#">TestBuilds</a></li>
+			</ul>
+		</li>
+        <li>
+			<a href="#">Modding Resources</a>
+			<ul>
+				<li><a href="#">Legacy</a></li>
+				<li><a href="#">Stable</a></li>
+				<li><a href="#">Thunderkit</a></li>
+			</ul>
+		</li>
+         <li>
+			<a href="#">Mod Resources</a>
+			<ul>
+				<li><a href="#">Modding libraries</a></li>
+				<li><a href="#">Modding Servers</a></li>
+				<li><a href="#">Other Modding Resources</a></li>
+			</ul>
+		</li>
+</nav>
+
+
+<div class="table">
+  <div class="tableRow">
+    <h3>BelowZero Legacy Mods </h3>
+  <div class="tableCell" style="color: white;">
+    <a href="https://example.com">One</a>
 </div>
 
-<div style="padding-left:16px">
-  <h2>Top Navigation Example</h2>
-  <p>Some content..</p>
+
+  </div>
+  <br>
+  <div class="tableRow">
+   <div class="tableRow">
+   <div class="tableCell" style="color: white;">
+    <a href="https://example.com">One</a>
+  </div>
+  <br>
+  <div class="tableRow">
+    <div class="tableRow">
+   <div class="tableCell" style="color: white;">
+    <a href="https://example.com">One</a>
+  </div>
+  <br>
 </div>
 
-<h2>BelowZero Mods</h2>
 
-<p>Legacy </p>
-<p>Stable</p>
 </body>
 </html>
