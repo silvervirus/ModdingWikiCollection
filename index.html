@@ -5,102 +5,121 @@
 <style>
 body {
     background-color: #07078c;
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set a more standard font */
 }
-h2 {
-  color:white;
+
+.navbar {
+    background-color: #2140cc;
+    overflow: hidden; /* Clear floats */
 }
-p {
-  color:white;
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-	.navbar {
-		background-color: #333;
-		position: relative;
-		z-index: 999;
-	}
 
-	.navbar ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-    background: #386de8;
-	}
+.navbar li {
+    float: left; /* Float the list items to create horizontal navigation */
+}
 
-	.navbar li {
-		display: inline-block;
-	}
-
-	.navbar li a {
-		color: white;
-		display: block;
-		padding: 10px 20px;
-		text-decoration: none;
-	}
-
-	/* Style the dropdown menu */
-	.navbar ul ul {
-		position: absolute;
-		top: 100%;
-		display: none;
-	}
-
-	.navbar ul ul li {
-		display: block;
-	}
-
-	.navbar li:hover ul {
-		display: block;
-	}
-
-	/* Change the background color of dropdown links on hover */
-	.navbar ul ul li a:hover {
-		background-color: #2759cc;
-        
-	}
-    .navbar li  a:hover, .navbar .navbar > li > a:focus {
-    background-color: #2759cc;
+.navbar li a {
+    display: block;
     color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Style the dropdown menu */
+.navbar ul ul {
+    display: none;
+    position: absolute;
+    background-color: #386de8;
+    border-top: 4px solid #2759cc;
+}
+
+.navbar ul ul li {
+    float: none; /* Make dropdown items display vertically */
+    border-bottom: 1px solid #2759cc; /* Add borders between dropdown items */
+}
+
+.navbar li:hover ul {
+    display: block;
+}
+
+.navbar li a:hover, .navbar .navbar > li > a:focus {
+    background-color: #2759cc;
+}
+
+.container {
+    border: 2px solid blue;
+    padding: 20px;
+    background-color: white; /* Set background color to contrast with blue border */
+    margin: 20px auto; /* Center the container horizontally */
+    max-width: 800px; /* Limit container width for better readability */
+    text-align: center; /* Center text inside container */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.container h1 {
+    color: #07078c; /* Match heading color with background color */
+}
+
+.container h2 {
+    color: #333; /* Set a darker color for better contrast */
 }
 </style>
 </head>
 <body>
 
 <nav class="navbar">
-	<ul>
-		<li><a href="./index.html">Home</a></li>
-		<li>
-			<a href="#">Subnautica</a>
-			<ul>
-				<li><a href="./snlegacy.html">Legacy</a></li>
-				<li><a href="#">LivingLarge</a></li>
-				<li><a href="#">TestBuilds</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="#">BelowZero</a>
-			<ul>
-				<li><a href="./Belowzero.html">Legacy</a></li>
-				<li><a href="#">Stable</a></li>
-				<li><a href="#">TestBuilds</a></li>
-			</ul>
-		</li>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
         <li>
-			<a href="#">Modding Resources</a>
-			<ul>
-				<li><a href="#">Legacy</a></li>
-				<li><a href="#">Stable</a></li>
-				<li><a href="#">Thunderkit</a></li>
-			</ul>
-		</li>
-         <li>
-			<a href="#">Mod Resources</a>
-			<ul>
-				<li><a href="#">Modding libraries</a></li>
-				<li><a href="#">Modding Servers</a></li>
-				<li><a href="#">Other Modding Resources</a></li>
-			</ul>
-		</li>
+            <a href="#">Subnautica</a>
+            <ul>
+                <li><a href="./snhelp.html">Install Instructions</a></li>
+                <li><a href="./snlegacy.html">Legacy</a></li>
+                <li><a href="#">LivingLarge</a></li>
+                <li><a href="#">TestBuilds</a></li>
+                
+            </ul>
+        </li>
+        <li>
+            <a href="#">BelowZero</a>
+            <ul>
+                <li><a href="./bzhelp.html">Install Instructions</a></li>
+                <li><a href="./Belowzero.html">Legacy</a></li>
+                <li><a href="#">Stable</a></li>
+                <li><a href="#">TestBuilds</a></li>
+                
+            </ul>
+        </li>
+        <li>
+            <a href="#">Modding Resources</a>
+            <ul>
+                <li><a href="#">Legacy</a></li>
+                <li><a href="#">Stable</a></li>
+                <li><a href="#">Thunderkit</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Communities</a>
+            <ul>
+                <li><a href="#">Modding libraries</a></li>
+                <li><a href="#">Modding Servers</a></li>
+                <li><a href="#">Other Modding Resources</a></li>
+            </ul>
+        </li>
+    </ul>
 </nav>
-
+<br>
+<div class="container">
+    <h1>Welcome To the Mod Backup wiki</h1>
+    <h2>with this wiki we are hoping to backup links used on submodica so if anything happens to Submodica we will have the backups and mods to available to the community</h2>
+</div>
 
 </body>
 </html>
