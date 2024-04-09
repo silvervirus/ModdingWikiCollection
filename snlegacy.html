@@ -5,9 +5,13 @@
 <style>
 body {
     background-color: #07078c;
+    color: white;
 }
 h2 {
   color:white;
+}
+a {
+  color:black; /* changed from a1 to a */
 }
 p {
   color:white;
@@ -60,64 +64,134 @@ p {
     background-color: #2759cc;
     color: white;
 }
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 400px;
+    margin: 0 auto;
+    background-color: white;
+}
+th, td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #2759cc;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+ol {
+    list-style-type: none;
+    padding-left: 20px;
+    color: black; /* Added to make text white */
+}
+ol li {
+    margin-bottom: 5px;
+}
 </style>
 </head>
 <body>
 
 <nav class="navbar">
-	<ul>
-		<li><a href="./index.html">Home</a></li>
-		<li>
-			<a href="#">Subnautica</a>
-			<ul>
-				<li><a href="./snlegacy.html">Legacy</a></li>
-				<li><a href="#">LivingLarge</a></li>
-				<li><a href="#">TestBuilds</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="#">BelowZero</a>
-			<ul>
-				<li><a href="./Belowzero.html">Legacy</a></li>
-				<li><a href="#">Stable</a></li>
-				<li><a href="#">TestBuilds</a></li>
-			</ul>
-		</li>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
         <li>
-			<a href="#">Modding Resources</a>
-			<ul>
-				<li><a href="#">Legacy</a></li>
-				<li><a href="#">Stable</a></li>
-				<li><a href="#">Thunderkit</a></li>
-			</ul>
-		</li>
+            <a href="#">Subnautica</a>
+            <ul>
+                <li><a href="./snlegacy.html">Legacy</a></li>
+                <li><a href="#">LivingLarge</a></li>
+                <li><a href="#">TestBuilds</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">BelowZero</a>
+            <ul>
+                <li><a href="./Belowzero.html">Legacy</a></li>
+                <li><a href="#">Stable</a></li>
+                <li><a href="#">TestBuilds</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Modding Resources</a>
+            <ul>
+                <li><a href="#">Legacy</a></li>
+                <li><a href="#">Stable</a></li>
+                <li><a href="#">Thunderkit</a></li>
+            </ul>
+        </li>
          <li>
-			<a href="#">Mod Resources</a>
-			<ul>
-				<li><a href="#">Modding libraries</a></li>
-				<li><a href="#">Modding Servers</a></li>
-				<li><a href="#">Other Modding Resources</a></li>
-			</ul>
-		</li>
+            <a href="#">Mod Resources</a>
+            <ul>
+                <li><a href="#">Modding libraries</a></li>
+                <li><a href="#">Modding Servers</a></li>
+                <li><a href="#">Other Modding Resources</a></li>
+            </ul>
+        </li>
 </nav>
-
-
-<div class="table">
- <div class="tableRow">
-    <div class="tableCell" style="color: white;">
-    <h3>Subnautica Legacy</h3>
-        <a href="./Leem.html">
-        <div style="border: 1px solid blue; display: inline-block;">
-            <img src="https://avatars.githubusercontent.com/u/31892011?v=4" alt="Link to Lee's Legacy mods" width="50" height="50">
-            <br>
-          Lee23  
-        </a>
-    </div>
-</div>
-
-
-  </div>
-
-
+<br>
+<br>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Legacy Mods List</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <ol>
+                    <li><b>Lee's mods</b>
+                        <ol>
+                            <li><a href="https://github.com/LeeTwentyThree/Lee23-LegacySubnauticaMods/blob/main/Downloads/DownloadPages/ModDownloads-Subnautica.md">Lee's other legacy mods</a></li>
+                            <li>
+                                <b>Socknautica</b>
+                                <ol>
+                                    <li><a href="https://github.com/LeeTwentyThree/SubnauticaMods/releases/download/Socknautica%2F1.0.0/Socknautica.zip">Socknautica</a></li>
+                                    <li><a href="https://github.com/LeeTwentyThree/SubnauticaMods/releases/download/SocknauticaSubmarinesPack%2F1.0.5/SocknauticaSubmarinesPack.zip">Socknautica Submarines</a></li>
+                                    <li><a href="https://github.com/LeeTwentyThree/Lee23-SubnauticaMods/raw/main/Downloads/Socksfor1Monsters.zip">Bloop and Blaza</a></li>
+                                    <li><a href="https://www.nexusmods.com/subnautica/mods/619">ECC Library</a></li>
+                                    <li><a href="https://www.nexusmods.com/subnautica/mods/640?tab=description">De-Extinction</a></li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li><b>EldritchCarMaker's mods</b>
+                        <ol>
+                            <li><a href="https://github.com/EldritchCarMaker/My-Subnautica-Mods/blob/main/CDUMods.md">Camera Drones Upgrades Mods</a></li>
+                            <li><a href="https://github.com/EldritchCarMaker/My-Subnautica-Mods/blob/main/EIIMods.md">Equippable Item Icons Mods</a></li>
+                            <li><a href="https://github.com/EldritchCarMaker/My-Subnautica-Mods/blob/main/SubnauticaMods.md">EldritchCarMaker My Legacy Subnautica Mods</a></li>                         
+                        </ol>
+                    </li>
+                    <li><b>MrPurple's mods</b>
+                        <ol>
+                            <li><a href="https://github.com/MrPurple6411/My-Subnautica-Mods/releases/tag/3.26.2022">Subnautica and Belowzero mods</a></li>
+                        </ol>
+                        <li><b>DaWrecka's mods</b>
+                        <ol>
+                            <li><a href="https://github.com/DaWrecka/Beta-Mods/tree/main/Subnautica">DaWrecka's mods Legacy</a></li>
+                        </ol>
+                        <li><b>Metious's mods</b>
+                        <ol>
+                            <li><a href="https://github.com/LeeTwentyThree/MetiousSubnauticaMods">Metious's mods Legacy</a></li>
+                        </ol>
+                        <li><b>Reika's mods</b>
+                        <ol>
+                            <li><a href="https://github.com/ReikaKalseki/Reika_SubnauticaModsShared/releases/download/Downloads/Dragon_Industries_-_Alterra_Division.zip">Dragon_Industries</a></li>
+                            <li><a href="https://github.com/ReikaKalseki/Reika_SubnauticaModsShared/releases/download/Downloads/SeaToSea.zip">Sea2Sea</a></li>
+                            <li><a href="https://github.com/ReikaKalseki/Reika_SubnauticaModsShared/releases/download/Downloads/AqueousEngineering.zip">AqueousEngineering</a></li> 
+                            <li><a href="https://github.com/ReikaKalseki/Reika_SubnauticaModsShared/releases/download/Downloads/Ecocean.zip">Ecocean</a></li>  
+                            <li><a href="https://github.com/ReikaKalseki/Reika_SubnauticaModsShared/releases/download/Downloads/Exscansion.zip">Exscansion</a></li>  
+                            <li><a href="https://github.com/ReikaKalseki/Reika_SubnauticaModsShared/releases/download/Downloads/ReefBalance.zip">ReefBalance</a></li>
+                            <li><a href="https://github.com/ReikaKalseki/Reika_SubnauticaModsShared/releases/download/Downloads/Auroresource.zip">Auroresource</a></li> 
+                        </ol>
+                    </li>
+                </ol>
+            </td>
+        </tr>
+    </tbody>
+</table>
 </body>
 </html>
