@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    background-color: #07078c;
+}
+h2 {
+  color:white;
+}
+h3 {
+  color:white;
+}
+h4 {
+  color:black;
+}
+p {
+  color:white;
+}
+a {
+  color:white;
+}
+	.navbar {
+		background-color: #333;
+		position: relative;
+		z-index: 999;
+	}
+
+	.navbar ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+    background: #386de8;
+	}
+
+	.navbar li {
+		display: inline-block;
+	}
+
+	.navbar li a {
+		color: white;
+		display: block;
+		padding: 10px 20px;
+		text-decoration: none;
+	}
+
+	/* Style the dropdown menu */
+	.navbar ul ul {
+		position: absolute;
+		top: 100%;
+		display: none;
+	}
+
+	.navbar ul ul li {
+		display: block;
+	}
+
+	.navbar li:hover ul {
+		display: block;
+	}
+
+	/* Change the background color of dropdown links on hover */
+	.navbar ul ul li a:hover {
+		background-color: #2759cc;
+        
+	}
+    .navbar li  a:hover, .navbar .navbar > li > a:focus {
+    background-color: #2759cc;
+    color: white;
+}
+ .container {
+        position: relative;
+        width: max-content;
+        display: inline-block;
+    }
+
+    .text-on-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: white;
+    }   
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+	<ul>
+		<li><a href="./index.html">Home</a></li>
+		<li>
+			<a href="#">Subnautica</a>
+			<ul>
+				<li><a href="./snlegacy.html">Legacy</a></li>
+				<li><a href="#">LivingLarge</a></li>
+				<li><a href="#">TestBuilds</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">BelowZero</a>
+			<ul>
+				<li><a href="./Belowzero.html">Legacy</a></li>
+				<li><a href="#">Stable</a></li>
+				<li><a href="#">TestBuilds</a></li>
+			</ul>
+		</li>
+        <li>
+			<a href="#">Modding Resources</a>
+			<ul>
+				<li><a href="#">Legacy</a></li>
+				<li><a href="#">Stable</a></li>
+				<li><a href="#">Thunderkit</a></li>
+			</ul>
+		</li>
+         <li>
+			<a href="#">Communities</a>
+			<ul>
+				<li><a href="#">Modding libraries</a></li>
+				<li><a href="#">Modding Servers</a></li>
+				<li><a href="#">Other Modding Resources</a></li>
+			</ul>
+		</li>
+</nav>
+<style>
+    table {
+        border-collapse: separate;
+        border-spacing: 0;
+        border-radius: 10px; /* Adjust the radius to change the degree of roundness */
+        overflow: hidden; /* Clip the border-radius overflow */
+    }
+    td {
+        padding: 10px; /* Add padding to the table cells */
+    }
+</style>
+
+<h2>Modname</h2>
+<table border="10" bordercolor="#386de8">
+    <tr>
+        <td>
+            <!-- Row 1: Image and Mod Name -->
+            <div style="display: flex; align-items: center;">
+                <img src="https://raw.githubusercontent.com/LeeTwentyThree/Lee23-SubnauticaMods/main/Downloads/Thumbnails/SeaVoyager-V2.png" width="100" height="100" alt="Image 1">
+                 <div class="container">
+    <span class="text-on-top" style="margin-left: 18px;"><h4>Mod Download</h4></span>
+    <br>
+    <br>
+    <span style="margin-left: 10px;"><a href="https://example.com">Alterra Sea Voyage</a></span>
+</div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h4>Mod Information</h4>
+            <p>this is where the mod information goes</p>
+        </td>
+    </tr>
+    <tr>
+        
+    </tr>
+</table>
+
+
+
+
+
+</body>
+</html>
