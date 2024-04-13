@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="silvervirus/ModdingWikiCollection/toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
@@ -18,8 +19,23 @@ h4 {
 p {
   color:white;
 }
+p1 {
+  color:blue;
+}
 a {
   color:white;
+}
+a1 {
+  color:black;
+}
+a2 {
+  color:Gray;
+}
+a3 {
+  color:black;
+}
+a4 {
+  color:black;
 }
 	.navbar {
 		background-color: #333;
@@ -69,18 +85,142 @@ a {
     background-color: #2759cc;
     color: white;
 }
- .container {
-        position: relative;
-        width: max-content;
-        display: inline-block;
-    }
+.container {
+    position: relative;
+}
 
-    .text-on-top {
-        position: absolute;
-        top: 0;
-        left: 0;
-        color: white;
-    }   
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table td {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: blue;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+.circle2 {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: blue;
+    display: block;
+    position: center;
+   
+}
+.circle-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.toggle-input {
+    display: none;
+}
+
+.details {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+}
+
+.toggle-input:checked + .circle {
+    background-color: transparent;
+}
+
+.toggle-input:checked + .circle + .details {
+    display: block;
+}
+
+.details .text a {
+    color: blue;
+    text-decoration: none;
+}
+.mod-name-background {
+    background-color: blue;
+    padding: 5px 10px;
+    border-radius: 10px 10px 0 0;
+}
+.mod-reg-background {
+    background-color: orange;
+    padding: 1px 1px;
+    border-radius: 1px 1px 0 0;
+}
+.mod-dec-background {
+    background-color: blue;
+    padding: 1px 1px;
+    border-radius: 1px 1px 0 0;
+}
+
+.mod-name {
+    color: White;
+    font-weight: bold;
+}
+.title {
+    color: White;
+    font-weight: bold;
+}
+.mod-reg {
+    color: black;
+    font-weight: bold;
+}
+.mod-dec {
+    color: black;
+    font-weight: bold;
+}
+.dec {
+    color: black;
+    font-weight: bold;
+}
+.nested-ul {
+    list-style-type: none; /* Remove the default bullet point */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+}
+
+.nested-ul li {
+    margin: 0; /* Remove margin from nested list items */
+    padding: 0; /* Remove padding from nested list items */
+}
+/* Style the details element */
+details {
+    background-color: white; /* Change the background color of the pop-out */
+    border-radius: 5px; /* Add some border radius for a nicer appearance */
+    margin-bottom: 10px; /* Add some margin at the bottom for spacing */
+}
+
+/* Style the summary element */
+regsummary {
+    padding: 10px; /* Add some padding to make it clickable */
+    cursor: pointer; /* Change the cursor to indicate it's clickable */
+}
+decsummary {
+    padding: 10px; /* Add some padding to make it clickable */
+    cursor: pointer; /* Change the cursor to indicate it's clickable */
+}
+
+/* Style the nested UL */
+.nested-ul {
+    list-style-type: none; /* Remove default list bullet points */
+    padding-left: 20px; /* Add some padding for indentation */
+}
 </style>
 </head>
 <body>
@@ -133,37 +273,50 @@ a {
         padding: 10px; /* Add padding to the table cells */
     }
 </style>
-
-<h2>Modname</h2>
-<table border="10" bordercolor="#386de8">
-    <tr>
-        <td>
-            <!-- Row 1: Image and Mod Name -->
-            <div style="display: flex; align-items: center;">
-                <img src="https://raw.githubusercontent.com/LeeTwentyThree/Lee23-SubnauticaMods/main/Downloads/Thumbnails/SeaVoyager-V2.png" width="100" height="100" alt="Image 1">
-                 <div class="container">
-    <span class="text-on-top" style="margin-left: 18px;"><h4>Mod Download</h4></span>
-    <br>
-    <br>
-    <span style="margin-left: 10px;"><a href="https://example.com">Alterra Sea Voyage</a></span>
+<div class="container">
+    <table class="table">
+        <tr>
+        <br>
+        <label  class="circle2" title="Lee's Legacy Mods"> 
+                    <img src="https://avatars.githubusercontent.com/u/31892011?v=4" alt="Photo" class="circle-photo">   
+                </label>
+          <h1 class ="title">Lee's Legacy Mods<h1>
+            <td>
+                <div>
+                </div>
+                <input type="checkbox" id="toggle1" class="toggle-input">
+                <!-- Add title attribute to display text when hovering -->
+                <label for="toggle1" class="circle" title="Alterra Sea Voyager"> 
+                    <img src="https://raw.githubusercontent.com/LeeTwentyThree/Lee23-SubnauticaMods/main/Downloads/Thumbnails/SeaVoyager-V2.png" alt="Photo" class="circle-photo">   
+                </label>
+                <div id="details1" class="details">
+                    <div class="text">
+                        <div class="mod-name-background">
+                            <a1 class="mod-name">Alterra Sea Voyager <br> <a2 href="link1.html">Download</a2></a1>
+                        </div>
+                        <div class="mod-reg-background">
+                            <details>
+                                <summary class="regsummary"><a4 class="mod-reg">Mod Requirements</a4></summary>
+                                <ul class="nested-ul">
+                                    <li><a href="#">Qmodmanager</a></li>
+                                    <li><a href="#">Smlhelper</a></li>
+                                    <li><a href="#">placeholder</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="mod-dec-background">
+                            <details>
+                                <summary class="decsummary"><a4 class="mod-dec">Mod Description</a4></summary>
+                                <div class="dec-background"> <a4 class="dec">Adds a new vehicle in the form of a boat. Being slightly larger than the cyclops, it allows you to quickly travel across planet 4546B and gives you plenty of space for building.
+                                    The Sea Voyager acts as a great alternative to a starting base. It has the same functionalities as a base would but it can move freely throughout the surface of 4546B. With the BuildingTweaks mod by MrPurple you can even build on the deck!</a4> </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
 </div>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <h4>Mod Information</h4>
-            <p>this is where the mod information goes</p>
-        </td>
-    </tr>
-    <tr>
-        
-    </tr>
-</table>
-
-
-
-
 
 </body>
 </html>
