@@ -3,7 +3,6 @@
 <head>
 <script src="silvervirus/ModdingWikiCollection/toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=0">
-<script src="./darkmode.js"></script>
 <link rel="stylesheet" href="./Style.css"> <!-- Link to your CSS file -->
 <style>
 body {
@@ -375,6 +374,12 @@ If the built-in options are not enough, you have the choice to create your own c
     </div>
 </div>
 <button onclick="toggleTheme()">Toggle Theme</button>
+
+<script>
+    function toggleTheme() {
+        document.body.classList.toggle('dark-mode');
+    }
+</script>
 </body>
 </html>
 
