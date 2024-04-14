@@ -2,14 +2,28 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=0">
-<link rel="stylesheet" href="./Style.css"> <!-- Link to your CSS file -->
 <script src="./darkmode.js"></script>
 <style>
 body {
       background-image: url('./background.jpg');
        background-size: cover; /* Cover the entire container with the background image *//* Add the URL of your image */
 }
+:root {
+            --bg-color-light: #ffffff;
+            --text-color-light: #000000;
+            --bg-color-dark: #333333;
+            --text-color-dark: #ffffff;
+        }
 
+        body {
+            background-color: var(--bg-color-light);
+            color: var(--text-color-light);
+        }
+
+        .dark-mode body {
+            background-color: var(--bg-color-dark);
+            color: var(--text-color-dark);
+        }
 h2, h3 {
     color: white;
     font-size: 16px;
