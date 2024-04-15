@@ -90,13 +90,12 @@ a2, a3, a4 {
     background-color: #2759cc;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centers the circles horizontally */
-    gap: 20px; /* Adds space between circles */
-    max-width: 1200px; /* Adjust max-width as needed */
-    margin: 0 auto; /* Centers the container horizontally */
+.container 
+    {
+    position: relative;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    overflow: hidden;
 }
 
 .container > div {
@@ -111,15 +110,13 @@ a2, a3, a4 {
 }
 
 .circle, .circle2 {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: blue;
-    display: block;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
 }
-
 .circle2 {
     width: 90px;
     height: 90px;
@@ -129,31 +126,37 @@ a2, a3, a4 {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    object-fit: cover;
+    transition: transform 0.3s ease;
 }
+
 
 .toggle-input {
     display: none;
 }
 
 .details {
-    display: none;
     position: absolute;
-    top: 70%;
-    left: 0;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 20px;
     background-color: white;
     border: 1px solid #ccc;
-    border-top: none;
-    border-radius: 0 0 10px 10px;
+    border-radius: 5px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.toggle-input:checked + .circle {
-    background-color: transparent;
+.toggle-checkbox:checked + .circle .circle-photo {
+    transform: scale(1.2); /* Adjust scale factor as needed */
 }
 
-.toggle-input:checked + .circle + .details {
-    display: block;
+.toggle-checkbox:checked + .circle .details {
+    top: calc(100% + 20px); /* Adjust offset as needed */
+    opacity: 1;
+    visibility: visible;
 }
 
 .details .text a {
