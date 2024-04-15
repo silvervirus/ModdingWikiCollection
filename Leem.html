@@ -91,12 +91,23 @@ a2, a3, a4 {
 }
 
 .container {
-    position: relative;
     display: flex;
-    background-color: white;
-    padding: 20px;
-    justify-content: normal;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the circles horizontally */
+    gap: 20px; /* Adds space between circles */
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+.container > div {
+    flex: 0 0 calc(20% - 50px); /* Two circles per row with 20px gap */
+    margin-bottom: 20px; /* Adds space between rows */
+}
+
+@media (min-width: 768px) {
+    .container > div {
+        flex: 0 0 calc(66.666% - 30px); /* Three circles per row on larger screens */
+    }
 }
 
 .circle, .circle2 {
@@ -128,7 +139,7 @@ a2, a3, a4 {
 .details {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 70%;
     left: 0;
     padding: 20px;
     background-color: white;
@@ -264,7 +275,7 @@ regsummary, decsummary {
         <div id="details1" class="details">
             <div class="text">
               <div class="mod-name-background">
-                            <a1 class="mod-name">Alterra Sea Voyager <br> <a2 href="link1.html">Download</a2></a1>
+                            <a1 class="mod-name">Alterra Sea Voyager <br> <a2 href="https://www.nexusmods.com/subnautica/mods/604">Download</a2></a1>
                         </div>
                         <div class="mod-reg-background">
                             <details>
@@ -295,7 +306,7 @@ regsummary, decsummary {
         <div id="details2" class="details">
             <div class="text">
                <div class="mod-name-background">
-                            <a1 class="mod-name">Bloop & Blaza <br> <a2 href="link1.html">Download</a2></a1>
+                            <a1 class="mod-name">Bloop & Blaza <br> <a2 href="https://github.com/LeeTwentyThree/Lee23-SubnauticaMods/raw/main/Downloads/Socksfor1Monsters.zip">Download</a2></a1>
                         </div>
                         <div class="mod-reg-background">
                             <details>
@@ -331,7 +342,7 @@ The Blaza Leviathan inhabits various cave systems on the planet. This creature i
         <div id="details3" class="details">
             <div class="text">
                 <div class="mod-name-background">
-                            <a1 class="mod-name">CustomInventoryColors <br> <a2 href="link1.html">Download</a2></a1>
+                            <a1 class="mod-name">CustomInventoryColors <br> <a2 href="https://github.com/LeeTwentyThree/Lee23-SubnauticaMods/raw/main/Downloads/CustomInventoryColors.zip">Download</a2></a1>
                         </div>
                         <div class="mod-reg-background">
                             <details>
@@ -367,7 +378,7 @@ If the built-in options are not enough, you have the choice to create your own c
         <div id="details4" class="details">
             <div class="text">
                  <div class="mod-name-background">
-                            <a1 class="mod-name">CustomWaterLevel <br> <a2 href="link1.html">Download</a2></a1>
+                            <a1 class="mod-name">CustomWaterLevel <br> <a2 href="https://www.nexusmods.com/subnautica/mods/599">Download</a2></a1>
                         </div>
                         <div class="mod-reg-background">
                             <details>
@@ -383,6 +394,266 @@ If the built-in options are not enough, you have the choice to create your own c
                             <details>
                                 <summary class="decsummary"><a4 class="mod-dec">Mod Description</a4></summary>
                                 <div class="dec-background"> <a4 class="dec">As the name implies, this mod lets you change the water level on 4546B. If you want a fun experience, I would instead recommend playing the Below Zero version of this mod, since it is much more challenging and has less issues!
+
+</a4> </div>
+                            </details>
+                        </div>
+                        </div>      
+        </div>
+    </div>
+                         <!-- Five Circle -->
+    <div>
+        <input type="checkbox" id="toggle5" class="toggle-input">
+        <label for="toggle5" class="circle" title="De-Extinction"> 
+            <img src="https://staticdelivery.nexusmods.com/mods/1155/images/thumbnails/640/640-1610252475-34387341.png" alt="Photo" class="circle-photo">   
+        </label>
+        <div id="details5" class="details">
+            <div class="text">
+                 <div class="mod-name-background">
+                            <a1 class="mod-name">De-Extinction <br> <a2 href="https://www.nexusmods.com/subnautica/mods/640">Download</a2></a1>
+                        </div>
+                        <div class="mod-reg-background">
+                            <details>
+                                <summary class="regsummary"><a4 class="mod-reg">Mod Requirements</a4></summary>
+                                <ul class="nested-ul">
+                                    <li><a href="https://www.nexusmods.com/subnautica/mods/201">Qmodmanager</a></li>
+                                    <li><a href="https://www.nexusmods.com/subnautica/mods/113">Smlhelper</a></li>
+                                    
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="mod-dec-background">
+                            <details>
+                                <summary class="decsummary"><a4 class="mod-dec">Mod Description</a4></summary>
+                                <div class="dec-background"> <a4 class="dec">The De-Extinction Mod brings a current total of 15 new naturally spawning creatures into Subnautica, each fully fleshed out with different behaviors, preferred biomes, PDA entries, and more! Currently there are 10 small edible creatures, 4 larger inedible creatures, and one large, very much inedible leviathan class lifeform.
+
+</a4> </div>
+                            </details>
+                        </div>
+                        </div>      
+        </div>
+    </div>
+                        <!-- Six Circle -->
+    <div>
+        <input type="checkbox" id="toggle6" class="toggle-input">
+        <label for="toggle6" class="circle" title="ECCLibray"> 
+            <img src="https://github.com/LeeTwentyThree/Lee23-SubnauticaMods/raw/main/Downloads/Thumbnails/ECCLibrary.png" alt="Photo" class="circle-photo">   
+        </label>
+        <div id="details6" class="details">
+            <div class="text">
+                 <div class="mod-name-background">
+                            <a1 class="mod-name">ECCLibray <br> <a2 href="https://www.nexusmods.com/subnautica/mods/619">Download</a2></a1>
+                        </div>
+                        <div class="mod-reg-background">
+                            <details>
+                                <summary class="regsummary"><a4 class="mod-reg">Mod Requirements</a4></summary>
+                                <ul class="nested-ul">
+                                    <li><a href="https://www.nexusmods.com/subnautica/mods/201">Qmodmanager</a></li>
+                                    <li><a href="https://www.nexusmods.com/subnautica/mods/113">Smlhelper</a></li>
+                                    
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="mod-dec-background">
+                            <details>
+                                <summary class="decsummary"><a4 class="mod-dec">Mod Description</a4></summary>
+                                <div class="dec-background"> <a4 class="dec">A necessity for all creature mods.
+
+                                    This is a modding library that helps modders create their own creatures with a flexible system and minimal redundant code. This mod must be installed like any other QMod for creature mods to function properly.
+
+</a4> </div>
+                            </details>
+                        </div>
+                        </div>      
+        </div>
+    </div>
+                         <!-- Seven Circle -->
+    <div>
+        <input type="checkbox" id="toggle7" class="toggle-input">
+        <label for="toggle7" class="circle" title="Wind Turbines "> 
+            <img src="https://github.com/LeeTwentyThree/Lee23-SubnauticaMods/raw/main/Downloads/Thumbnails/WindTurbines.png" alt="Photo" class="circle-photo">   
+        </label>
+        <div id="details7" class="details">
+            <div class="text">
+                 <div class="mod-name-background">
+                            <a1 class="mod-name">Wind Turbines  <br> <a2 href="https://www.nexusmods.com/subnautica/mods/355">Download</a2></a1>
+                        </div>
+                        <div class="mod-reg-background">
+                            <details>
+                                <summary class="regsummary"><a4 class="mod-reg">Mod Requirements</a4></summary>
+                                <ul class="nested-ul">
+                                    <li><a href="https://www.nexusmods.com/subnautica/mods/201">Qmodmanager</a></li>
+                                    <li><a href="https://www.nexusmods.com/subnautica/mods/113">Smlhelper</a></li>
+                                    
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="mod-dec-background">
+                            <details>
+                                <summary class="decsummary"><a4 class="mod-dec">Mod Description</a4></summary>
+                                <div class="dec-background"> <a4 class="dec">My first mod! A basic mod that adds a basic power source. Works great with the Sea Voyager
+
+</a4> </div>
+                            </details>
+                        </div>
+                        </div>      
+        </div>
+    </div>
+                         <!-- eight Circle -->
+    <div>
+        <input type="checkbox" id="toggle8" class="toggle-input">
+        <label for="toggle8" class="circle" title="LavaRising "> 
+            <img src="https://github.com/LeeTwentyThree/Lee23-SubnauticaMods/raw/main/Downloads/Thumbnails/SubnauticaButLavaRisesTN.png" alt="Photo" class="circle-photo">   
+        </label>
+        <div id="details8" class="details">
+            <div class="text">
+                 <div class="mod-name-background">
+                            <a1 class="mod-name">LavaRising <br> <a2 href="https://github.com/LeeTwentyThree/Lee23-SubnauticaMods/raw/main/Downloads/RisingLava.zip">Download</a2></a1>
+                        </div>
+                        <div class="mod-reg-background">
+                            <details>
+                                <summary class="regsummary"><a4 class="mod-reg">Mod Requirements</a4></summary>
+                                <ul class="nested-ul">
+                                    <li><a href="https://www.nexusmods.com/subnautica/mods/201">Qmodmanager</a></li>
+                                    <li><a href="https://www.nexusmods.com/subnautica/mods/113">Smlhelper</a></li>
+                                    
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="mod-dec-background">
+                            <details>
+                                <summary class="decsummary"><a4 class="mod-dec">Mod Description</a4></summary>
+                                <div class="dec-background"> <a4 class="dec">This challenge mod adds a layer of lava to planet 4546B. It's fully customizable and rises and falls based on how you set it up.
+
+</a4> </div>
+                            </details>
+                        </div>
+                        </div>      
+        </div>
+    </div>
+                         <!-- nine Circle -->
+    <div>
+        <input type="checkbox" id="toggle9" class="toggle-input">
+        <label for="toggle9" class="circle" title="MirrorWorld "> 
+            <img src="https://github.com/LeeTwentyThree/Lee23-SubnauticaMods/raw/main/Downloads/Thumbnails/MirrorWorld.png" alt="Photo" class="circle-photo">   
+        </label>
+        <div id="details9" class="details">
+            <div class="text">
+                 <div class="mod-name-background">
+                            <a1 class="mod-name">MirrorWorld <br> <a2 href="https://github.com/LeeTwentyThree/Lee23-SubnauticaMods/raw/main/Downloads/MirrorWorld.zip">Download</a2></a1>
+                        </div>
+                        <div class="mod-reg-background">
+                            <details>
+                                <summary class="regsummary"><a4 class="mod-reg">Mod Requirements</a4></summary>
+                                <ul class="nested-ul">
+                                    <li><a href="https://www.nexusmods.com/subnautica/mods/201">Qmodmanager</a></li>
+                                    <li><a href="https://www.nexusmods.com/subnautica/mods/113">Smlhelper</a></li>
+                                    
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="mod-dec-background">
+                            <details>
+                                <summary class="decsummary"><a4 class="mod-dec">Mod Description</a4></summary>
+                                <div class="dec-background"> <a4 class="dec">This mod flips the entire world upside down. There are options to flip it across other axes as well. Good luck beating the game like this, I never tried.
+
+</a4> </div>
+                            </details>
+                        </div>
+                        </div>      
+        </div>
+    </div>
+                         <!-- ten Circle -->
+    <div>
+        <input type="checkbox" id="toggle10" class="toggle-input">
+        <label for="toggle10" class="circle" title="MonkeySayMonkeyGet "> 
+            <img src="https://github.com/LeeTwentyThree/Lee23-SubnauticaMods/raw/main/Downloads/Thumbnails/MonkeySayMonkeyGet.png" alt="Photo" class="circle-photo">   
+        </label>
+        <div id="details10" class="details">
+            <div class="text">
+                 <div class="mod-name-background">
+                            <a1 class="mod-name">MonkeySayMonkeyGet <br> <a2 href="https://github.com/LeeTwentyThree/Lee23-LegacySubnauticaMods/raw/main/Downloads/MonkeySayMonkeyGet-1.0.1.zip">Download</a2></a1>
+                        </div>
+                        <div class="mod-reg-background">
+                            <details>
+                                <summary class="regsummary"><a4 class="mod-reg">Mod Requirements</a4></summary>
+                                <ul class="nested-ul">
+                                    <li><a href="https://www.nexusmods.com/subnautica/mods/201">Qmodmanager</a></li>
+                                    <li><a href="https://www.nexusmods.com/subnautica/mods/113">Smlhelper</a></li>
+                                    
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="mod-dec-background">
+                            <details>
+                                <summary class="decsummary"><a4 class="mod-dec">Mod Description</a4></summary>
+                                <div class="dec-background"> <a4 class="dec">Whatever you say in real life happens in Subnautica. Sounds too crazy to be true? Well, sort of, because it's extremely buggy! But that's what makes it fun! This crazy mod was designed for Twitch streams, but anyone can use it. As long as you have a mic!
+
+                                    When installing the mod, please open the installation-README.txt file included in the download. This mod will NOT work without doing that.
+
+</a4> </div>
+                            </details>
+                        </div>
+                        </div>      
+        </div>
+    </div>
+                         <!-- eleven Circle -->
+    <div>
+        <input type="checkbox" id="toggle11" class="toggle-input">
+        <label for="toggle11" class="circle" title="RandomEvents "> 
+            <img src="https://github.com/LeeTwentyThree/Lee23-SubnauticaMods/raw/main/Downloads/Thumbnails/RandomEvents.png" alt="Photo" class="circle-photo">   
+        </label>
+        <div id="details11" class="details">
+            <div class="text">
+                 <div class="mod-name-background">
+                            <a1 class="mod-name">RandomEvents <br> <a2 href="https://github.com/LeeTwentyThree/Lee23-LegacySubnauticaMods/raw/main/Downloads/RandomEvents-2.0.0.zip">Download</a2></a1>
+                        </div>
+                        <div class="mod-reg-background">
+                            <details>
+                                <summary class="regsummary"><a4 class="mod-reg">Mod Requirements</a4></summary>
+                                <ul class="nested-ul">
+                                    <li><a href="https://www.nexusmods.com/subnautica/mods/201">Qmodmanager</a></li>
+                                    <li><a href="https://www.nexusmods.com/subnautica/mods/113">Smlhelper</a></li>
+                                    
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="mod-dec-background">
+                            <details>
+                                <summary class="decsummary"><a4 class="mod-dec">Mod Description</a4></summary>
+                                <div class="dec-background"> <a4 class="dec">A random event happens every 30 seconds (configurable). Maybe a Ghost Leviathan will spawn outside your base. Maybe water (bottles) will rain from the sky. Or Shrek will look down upon you from space. Yes, there is Among Us too. This mod is very dangerous, so install at your own risk.
+
+</a4> </div>
+                            </details>
+                        </div>
+                        </div>      
+        </div>
+    </div>
+                         <!-- tweleve Circle -->
+    <div>
+        <input type="checkbox" id="toggle12" class="toggle-input">
+        <label for="toggle12" class="circle" title="ShrekLeviathan "> 
+            <img src="https://github.com/LeeTwentyThree/Lee23-SubnauticaMods/raw/main/Downloads/Images/ShrekLeviathanFish.jpg" alt="Photo" class="circle-photo">   
+        </label>
+        <div id="details12" class="details">
+            <div class="text">
+                 <div class="mod-name-background">
+                            <a1 class="mod-name">ShrekLeviathan <br> <a2 href="https://github.com/LeeTwentyThree/Lee23-SubnauticaMods/raw/main/Downloads/ShrekLeviathan.zip">Download</a2></a1>
+                        </div>
+                        <div class="mod-reg-background">
+                            <details>
+                                <summary class="regsummary"><a4 class="mod-reg">Mod Requirements</a4></summary>
+                                <ul class="nested-ul">
+                                    <li><a href="https://www.nexusmods.com/subnautica/mods/201">Qmodmanager</a></li>
+                                    <li><a href="https://www.nexusmods.com/subnautica/mods/113">Smlhelper</a></li>
+                                    
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="mod-dec-background">
+                            <details>
+                                <summary class="decsummary"><a4 class="mod-dec">Mod Description</a4></summary>
+                                <div class="dec-background"> <a4 class="dec">Mod commissioned by Socksfor1, original model artist forgotten (sorry!), code by Lee23. This was my first commission mod!
 
 </a4> </div>
                             </details>
