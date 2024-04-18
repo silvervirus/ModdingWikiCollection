@@ -1,6 +1,7 @@
+import NavBar from '../NavBar/NavBar';
 import './Home.css';
 
-export default function NavBar() : JSX.Element {
+export default function Home() : JSX.Element {
     return (
         <>
             <NavBar />
