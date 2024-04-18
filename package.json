@@ -1,0 +1,8 @@
+{
+  "name": "moddingwikicollection",
+  "version": "1.0.0",
+  "description": "a page to i can make a wiki for a list of modding",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
