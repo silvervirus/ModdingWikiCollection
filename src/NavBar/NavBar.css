@@ -3,41 +3,37 @@
     overflow: hidden; /* Clear floats */
 }
 
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar li {
+.navbar div {
     float: left; /* Float the list items to create horizontal navigation */
 }
 
-.navbar li a {
+.navbar a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-}
+} 
 
-/* Style the dropdown menu */
-.navbar ul ul {
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: none;
     position: absolute;
     background-color: #386de8;
     border-top: 4px solid #2759cc;
 }
 
-.navbar ul ul li {
+.navbar li {
     float: none; /* Make dropdown items display vertically */
     border-bottom: 1px solid #2759cc; /* Add borders between dropdown items */
 }
 
-.navbar li:hover ul {
+.navbar :hover ul {
     display: block;
 }
 
-.navbar li a:hover, .navbar .navbar > li > a:focus {
+.navbar a:hover, .navbar .navbar > li > a:focus {
     background-color: #2759cc;
 }
