@@ -2,6 +2,8 @@
   "name": "moddingwikicollection",
   "version": "1.0.0",
   "description": "a page to i can make a wiki for a list of modding",
+  "type": "module",
+  "homepage": "/ModdingWikiCollection",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build"
