@@ -4,5 +4,8 @@
   "description": "a page to i can make a wiki for a list of modding",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
   }
 }
