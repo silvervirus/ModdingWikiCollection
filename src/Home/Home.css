@@ -1,5 +1,5 @@
 body {
-    background-image: url('./background.jpg'); /* Add the URL of your image */
+    background-image: url('/background.jpg'); /* Add the URL of your image */
     margin: 0; /* Remove default margin */
     font-family: Arial, sans-serif; /* Set a more standard font */
 }
