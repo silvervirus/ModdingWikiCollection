@@ -1,0 +1,20 @@
+.circle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.circle {
+    text-align: center;
+    margin: 10px;
+}
+
+.circle img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.circle p {
+    margin-top: 5px;
+}
