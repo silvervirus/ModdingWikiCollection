@@ -1,0 +1,39 @@
+.navbar {
+    background-color: #2140cc;
+    overflow: hidden; /* Clear floats */
+}
+
+.navbar div {
+    float: left; /* Float the list items to create horizontal navigation */
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+} 
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    background-color: #386de8;
+    border-top: 4px solid #2759cc;
+}
+
+.navbar li {
+    float: none; /* Make dropdown items display vertically */
+    border-bottom: 1px solid #2759cc; /* Add borders between dropdown items */
+}
+
+.navbar :hover ul {
+    display: block;
+}
+
+.navbar a:hover, .navbar .navbar > li > a:focus {
+    background-color: #2759cc;
+}
