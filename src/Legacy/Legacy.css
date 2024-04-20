@@ -5,53 +5,7 @@ body {
     margin: 0;
 }
 
-.navbar {
-    background-color: #333;
-    overflow: hidden;
-    z-index: 999;
-}
 
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background: #386de8;
-}
-
-.navbar li {
-    display: inline-block;
-}
-
-.navbar li a {
-    color: white;
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-
-.navbar ul ul {
-    position: absolute;
-    top: 100%;
-    display: none;
-}
-
-.navbar ul ul li {
-    display: block;
-}
-
-.navbar li:hover ul {
-    display: block;
-}
-
-.navbar ul ul li a:hover {
-    background-color: #2759cc;
-}
-
-.navbar li a:hover,
-.navbar .navbar > li > a:focus {
-    background-color: #2759cc;
-    color: white;
-}
 
 .container {
     width: 80%;
