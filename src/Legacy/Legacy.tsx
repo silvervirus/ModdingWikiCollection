@@ -5,8 +5,7 @@ export default function Legacy(): JSX.Element {
     return (
         <>
             <NavBar />
-            <br />
-            <br />
+           
             <div className="container">
                 <h2>Subnautica Legacy Modders</h2>
                 <div className="table">
