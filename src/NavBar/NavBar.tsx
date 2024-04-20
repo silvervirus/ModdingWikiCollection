@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 export default function NavBar() : JSX.Element {
@@ -9,7 +10,7 @@ export default function NavBar() : JSX.Element {
                     <a href="#">Subnautica</a>
                     <ul>
                         <li><a href="./snhelp.html">Install Instructions</a></li>
-                        <li><a href="./snlegacy.html">Legacy</a></li>
+                        <li><Link to="/mods/legacy">Legacy</Link></li>
                         <li><a href="#">LivingLarge</a></li>
                         <li><a href="#">TestBuilds</a></li>
                         
@@ -19,7 +20,7 @@ export default function NavBar() : JSX.Element {
                     <a href="#">BelowZero</a>
                     <ul>
                         <li><a href="./bzhelp.html">Install Instructions</a></li>
-                        <li><a href="./Belowzero.html">Legacy</a></li>
+                        <li><Link to="/mods/BZlegacy">Legacy</Link></li>
                         <li><a href="#">Stable</a></li>
                         <li><a href="#">TestBuilds</a></li>
                         

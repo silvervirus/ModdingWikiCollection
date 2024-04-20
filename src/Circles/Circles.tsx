@@ -1,7 +1,7 @@
 import React from 'react';
 import './Circles.css'
 
-interface User {
+export interface User {
     username: string;
     avatar: string;
 }
