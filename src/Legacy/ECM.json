@@ -1,0 +1,19 @@
+{
+    "mods": [
+      {
+        "modname": "CameraDroneUpgrades",
+        "download": "https://github.com/EldritchCarMaker/My-Subnautica-Mods/files/9832540/CameraDroneUpgrades.zip",
+        "image": "https://example.com/mod1-image.jpg",
+        "requirements": ["Qmodmanager", "Smlhelper", "placeholder"],
+        "description": "Another API for improving the camera drones. This mod by default also adds scanning functionality to all drones, without requiring an upgrade to be equipped. Any mod that uses this API will use an upgrade module that must be inserted into the scanner room upgrades slot in order for the drones to be able to use the upgrades."
+      },
+      {
+        "modname": "AnotherMod",
+        "download": "https://github.com/EldritchCarMaker/My-Subnautica-Mods/files/9832540/AnotherMod.zip",
+        "image": "https://example.com/mod2-image.jpg",
+        "requirements": ["Requirement1", "Requirement2"],
+        "description": "Description of AnotherMod."
+      }
+    ]
+  }
+  

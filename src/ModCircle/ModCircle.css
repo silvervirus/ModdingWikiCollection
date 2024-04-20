@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Start from the beginning of the container */
+}
+
+.circle-container {
+    flex: 0 0 calc(26.666% - 20px); /* Adjust width to fit six circles per row */
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+.circle {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.lee {
+    width: 10%;
+    height: auto;
+    cursor: pointer;
+}
+.circle-lee {
+    width: 10%;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.circle-photo {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.toggle-input {
+    display: none;
+}
+
+.details {
+    display: none;
+}
+
+.toggle-input:checked + .circle + .details {
+    display: block;
+}
+
+/* Adjust the layout of the details container */
+.details {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.details .text a {
+    color: blue;
+    text-decoration: none;
+}
+
+.mod-name-background {
+    background-color: #1D86D7;
+    padding: 5px 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.mod-reg-background {
+    background-color: orangered;
+    padding: 1px 1px;
+    border-radius: 1px 1px 0 0;
+}
+
+.mod-dec-background {
+    background-color: #1D86D7;
+    padding: 1px 1px;
+    border-radius: 1px 1px 0 0;
+}
+
+.mod-reg,
+.mod-dec,
+.dec {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.mod-name {
+   font-weight: 1000; /* Adjust the value to make it bolder */
+    font-size: 16px;
+    /* Add the following rules */
+    word-wrap: break-word; /* Wrap long words */
+    max-width: 2000px; /* Limit the width of the container */
+}
+
+.title {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.nested-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nested-ul li {
+    margin: 0;
+    padding: 0;
+}
+
+details {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+regsummary,
+decsummary {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nested-ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
