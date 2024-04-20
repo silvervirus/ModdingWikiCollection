@@ -13,7 +13,7 @@ export default function Legacy(): JSX.Element {
                 <div className="table">
                     <div className="tableRow">
                         {/* Render Circle component with user data */}
-                        <Circle users={userData} />
+                        <Circles users={userData} />
                     </div>
                 </div>
             </div>
