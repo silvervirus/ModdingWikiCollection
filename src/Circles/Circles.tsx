@@ -1,5 +1,5 @@
 import React from 'react';
-import './Circle.css';
+import './Circles.css'
 
 interface User {
     username: string;
