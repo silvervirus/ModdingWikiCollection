@@ -1,10 +1,6 @@
 import React from 'react';
 import './Circles.css'
-
-interface User {
-    username: string;
-    avatar: string;
-}
+import { User } from '../Data/UserData';
 
 interface CircleProps {
     users: User[];
