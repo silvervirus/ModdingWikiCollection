@@ -34,11 +34,11 @@ const ModCircle: React.FC<ModCircleProps> = ({ modderName }) => {
                     <div id={`details${index}`} className="details">
                         <div className="text">
                             <div className="mod-name-background">
-                                <a1 className="mod-name">{mod.modname} <br /> <a href={mod.download}>Download</a></a1>
+                                <a className="mod-name">{mod.modname} <br /> <a href={mod.download}>Download</a></a>
                             </div>
                             <div className="mod-reg-background">
                                 <details>
-                                    <summary className="regsummary"><a4 className="mod-reg">Mod Requirements</a4></summary>
+                                    <summary className="regsummary"><a className="mod-reg">Mod Requirements</a></summary>
                                     <ul className="nested-ul">
                                         {mod.requirements.map((requirement, i) => (
                                             <li key={i}><a href="#">{requirement}</a></li>
@@ -48,8 +48,8 @@ const ModCircle: React.FC<ModCircleProps> = ({ modderName }) => {
                             </div>
                             <div className="mod-dec-background">
                                 <details>
-                                    <summary className="decsummary"><a4 className="mod-dec">Mod Description</a4></summary>
-                                    <div className="dec-background"> <a4 className="dec">{mod.description}</a4> </div>
+                                    <summary className="decsummary"><a className="mod-dec">Mod Description</a></summary>
+                                    <div className="dec-background"> <a className="dec">{mod.description}</a> </div>
                                 </details>
                             </div>
                         </div>
