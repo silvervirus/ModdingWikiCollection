@@ -10,7 +10,7 @@ interface CircleProps {
     users: User[];
 }
 
-const Circle: React.FC<CircleProps> = ({ users }) => {
+const Circles: React.FC<CircleProps> = ({ users }) => {
     return (
         <>
             {users.map((user, index) => (
@@ -26,4 +26,4 @@ const Circle: React.FC<CircleProps> = ({ users }) => {
     );
 };
 
-export default Circle;
+export default Circles;
