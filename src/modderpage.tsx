@@ -9,7 +9,6 @@ import Legacy from './Legacy/Legacy';
 ReactDOM.createRoot(document.getElementById('test')!)
     .render(
         <StrictMode>
-            
             <Legacy />
         </StrictMode>
 );
