@@ -11,7 +11,7 @@ export default function NavBar() : JSX.Element {
                     <ul>
                         <li><a href="./snhelp.html">Install Instructions</a></li>
                         <li><Link to="/mods/legacy">Legacy</Link></li>
-                        <li><Link href="/mods/stable">LivingLarge</Link></li>
+                        <li><Link to="/mods/stable">LivingLarge</Link></li>
                         <li><a href="#">TestBuilds</a></li>
                         
                     </ul>
