@@ -1,6 +1,6 @@
-import React from 'react';
+
 import NavBar from '../NavBar/NavBar';
-import Circle from './Circle'; // Import Circle component
+import Circle from './Circle/Circle'; // Import Circle component
 import userData from './users.json'; // Import user data
 import './Legacy.css';
 
