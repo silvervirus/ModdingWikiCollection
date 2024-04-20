@@ -13,6 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')!)
             <HashRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    { /* /mods/:game defines a pattern of /mods/ANYTHING where ANYTHING will be stored in the .game property of the location */}
                     <Route path="/mods/:game" element={<ModList />} />
                 </Routes>
             </HashRouter>
