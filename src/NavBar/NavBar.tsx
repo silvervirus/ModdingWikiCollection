@@ -10,8 +10,8 @@ export default function NavBar() : JSX.Element {
                     <a href="#">Subnautica</a>
                     <ul>
                         <li><a href="./snhelp.html">Install Instructions</a></li>
-                        <li><Link to="/mods/legacy">Legacy</Link></li>
-                        <li><Link to="/mods/stable">LivingLarge</Link></li>
+                        <li><Link to="/mods/SN-Legacy">Legacy</Link></li>
+                        <li><Link to="/mods/SN-Stable">LivingLarge</Link></li>
                         <li><a href="#">TestBuilds</a></li>
                         
                     </ul>
@@ -20,7 +20,7 @@ export default function NavBar() : JSX.Element {
                     <a href="#">BelowZero</a>
                     <ul>
                         <li><a href="./bzhelp.html">Install Instructions</a></li>
-                        <li><Link to="/mods/BZlegacy">Legacy</Link></li>
+                        <li><Link to="/mods/BZ-Legacy">Legacy</Link></li>
                         <li><a href="#">Stable</a></li>
                         <li><a href="#">TestBuilds</a></li>
                         
