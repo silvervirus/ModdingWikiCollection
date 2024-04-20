@@ -2,7 +2,7 @@ import NavBar from '../NavBar/NavBar';
 import Circles from '../Circles/Circles'; // Import Circle component from the correct path
 import './ModList.css';
 import { useParams } from 'react-router-dom';
-import { UserData } from './UserData';
+import { UserData } from '../Data/UserData';
 
 export default function ModList(): JSX.Element {
 
