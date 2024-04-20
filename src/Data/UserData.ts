@@ -1,4 +1,7 @@
-import { User } from "../Circles/Circles";
+export interface User {
+    username: string;
+    avatar: string;
+}
 
 export const UserData: {[name: string]: User[]} = {
 	["legacy"]: [
