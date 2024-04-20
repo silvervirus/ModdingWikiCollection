@@ -1,5 +1,6 @@
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client'
+import NavBar from './NavBar'; // Import the NavBar component
 import Legacy from './Legacy/Legacy';
 
 // Create a root for React to live at based on the "root" div
@@ -8,6 +9,7 @@ import Legacy from './Legacy/Legacy';
 ReactDOM.createRoot(document.getElementById('test')!)
     .render(
         <StrictMode>
+            <NavBar /> {/* Render NavBar component */}
             <Legacy />
         </StrictMode>
 );
