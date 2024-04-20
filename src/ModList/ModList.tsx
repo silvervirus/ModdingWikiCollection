@@ -8,7 +8,8 @@ export default function ModList(): JSX.Element {
 
     // Pulls data from the URL Route that we defined in our router
     // /mods/:game creates a variable named game in location
-    const { game, modType } = useParams<{ game: string, modType: string }>();
+    const location = useParams();
+    const game = location.game!;
     const usersList = UserData[game];
 
     if (!usersList)
@@ -19,7 +20,7 @@ export default function ModList(): JSX.Element {
             <NavBar />
            
             <div className="container">
-                <h2>{game} {modType} Modders</h2>
+                <h2>{game} {} Modders</h2>
                 <div className="table">
                     <div className="tableRow">
                         {/* Render Circle component with user data */}
