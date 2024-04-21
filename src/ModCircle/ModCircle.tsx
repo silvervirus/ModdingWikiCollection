@@ -11,10 +11,9 @@ interface Mod {
 
 interface ModCircleProps {
     mods: Mod[];
-    username: string;
 }
 
-const ModCircle: React.FC<ModCircleProps> = ({ mods, username }) => {
+const ModCircle: React.FC<ModCircleProps> = ({ mods }) => {
     return (
         <>
             {mods.map((mod, index) => (

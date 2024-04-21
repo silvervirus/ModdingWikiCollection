@@ -1,10 +1,10 @@
+import React from 'react';
 import NavBar from '../NavBar/NavBar';
 import ModCircle from '../ModCircle/ModCircle';
 import './ModList.css';
 import { useParams } from 'react-router-dom';
 
 interface User {
-    username: string;
     mods: Mod[];
 }
 
@@ -17,7 +17,7 @@ interface Mod {
 }
 
 export default function ModList(): JSX.Element {
-    const { game, username } = useParams<{ game: string; username: string }>();
+    const { username } = useParams<{ username: string }>();
     const userJsonUrl = `/silvervirus/ModdingWikiCollection/src/ModList/${username}.json`;
 
     const [userData, setUserData] = React.useState<User | null>(null);
@@ -36,10 +36,10 @@ export default function ModList(): JSX.Element {
         <>
             <NavBar />
             <div className="container">
-                <h2>{userData.username}'s Mods</h2>
+                <h2>{username}'s Mods</h2>
                 <div className="table">
                     <div className="tableRow">
-                        <ModCircle mods={userData.mods} username={userData.username} />
+                        <ModCircle mods={userData.mods} />
                     </div>
                 </div>
             </div>
