@@ -20,7 +20,7 @@ export default function ModList(): JSX.Element {
             <NavBar />
            
             <div className="container">
-                <h2>Subnautica {} Modders</h2>
+                <h2>Subnautica {game} Modders</h2>
                 <div className="table">
                     <div className="tableRow">
                         {/* Render Circle component with user data */}
