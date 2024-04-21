@@ -1,30 +1,29 @@
 import NavBar from '../NavBar/NavBar';
-import Circles from '../Circles/Circles'; // Import Circle component from the correct path
+import ModCircle from '../ModCircle/ModCircle';
 import './ModList.css';
 import { useParams } from 'react-router-dom';
 import { UserData } from '../Data/UserData';
 
 export default function ModList(): JSX.Element {
-
-    // Pulls data from the URL Route that we defined in our router
-    // /mods/:game creates a variable named game in location
-    const location = useParams();
-    const game = location.game!;
+    const { game, username } = useParams<{ game: string, username: string }>();
     const usersList = UserData[game];
 
     if (!usersList)
         return <span>User list not defined for {game}</span>;
 
+    const user = usersList.find(user => user.username === username);
+    if (!user)
+        return <span>User not found</span>;
+
     return (
         <>
             <NavBar />
-           
             <div className="container">
-                <h2>{game} {} Modders</h2>
+                <h2>{user.username}'s Mods</h2>
                 <div className="table">
                     <div className="tableRow">
-                        {/* Render Circle component with user data */}
-                        <Circles users={usersList} />
+                        {/* Render ModCircle component with user's mods and username */}
+                        <ModCircle mods={user.mods} username={user.username} />
                     </div>
                 </div>
             </div>
