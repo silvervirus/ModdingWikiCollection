@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import { UserData } from '../Data/ModData';
 import { UserData } from '../Data/UserData';
 
-export default function ModList(): JSX.Element {
+export default function ModderPage(): JSX.Element {
 
     // Pulls data from the URL Route that we defined in our router
     // /mods/:game creates a variable named game in location
