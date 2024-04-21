@@ -8,8 +8,7 @@ export interface Mods {
 	
 }
 export const ModData: {[mod: string]: Mod[]} = {
-	{
-  "ECM": [
+  ["ECM"]: [
     {
       "ModName": "CameraDroneUpgrades",
       "Download": "https://github.com/EldritchCarMaker/My-Subnautica-Mods/files/9832540/CameraDroneUpgrades.zip",
