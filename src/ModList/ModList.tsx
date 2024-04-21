@@ -2,33 +2,44 @@ import NavBar from '../NavBar/NavBar';
 import ModCircle from '../ModCircle/ModCircle';
 import './ModList.css';
 import { useParams } from 'react-router-dom';
-import { UserData } from '../Data/UserData';
 
 interface User {
     username: string;
     mods: Mod[];
 }
 
+interface Mod {
+    modname: string;
+    download: string;
+    image: string;
+    requirements: string[];
+    description: string;
+}
+
 export default function ModList(): JSX.Element {
     const { game, username } = useParams<{ game: string; username: string }>();
-    const usersList: User[] | undefined = UserData[game];
+    const userJsonUrl = `/silvervirus/ModdingWikiCollection/src/ModList/${username}.json`;
 
-    if (!usersList)
-        return <span>User list not defined for {game}</span>;
+    const [userData, setUserData] = React.useState<User | null>(null);
 
-    const user = usersList.find((user: User) => user.username === username);
-    if (!user)
-        return <span>User not found</span>;
+    React.useEffect(() => {
+        fetch(userJsonUrl)
+            .then(response => response.json())
+            .then((data: User) => setUserData(data))
+            .catch(error => console.error('Error fetching user data:', error));
+    }, [userJsonUrl]);
+
+    if (!userData)
+        return <span>Loading...</span>;
 
     return (
         <>
             <NavBar />
             <div className="container">
-                <h2>{user.username}'s Mods</h2>
+                <h2>{userData.username}'s Mods</h2>
                 <div className="table">
                     <div className="tableRow">
-                        {/* Render ModCircle component with user's mods and username */}
-                        <ModCircle mods={user.mods} username={user.username} />
+                        <ModCircle mods={userData.mods} username={userData.username} />
                     </div>
                 </div>
             </div>
