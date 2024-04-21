@@ -5,13 +5,13 @@ import { useParams } from 'react-router-dom';
 import { UserData } from '../Data/UserData';
 
 export default function ModList(): JSX.Element {
-    const { game, username } = useParams<{ game: string, username: string }>();
+    const { game, username } = useParams<{ game: string; username: string }>();
     const usersList = UserData[game];
 
     if (!usersList)
         return <span>User list not defined for {game}</span>;
 
-    const user = usersList.find(user => user.username === username);
+    const user = usersList.find((user) => user.username === username);
     if (!user)
         return <span>User not found</span>;
 
