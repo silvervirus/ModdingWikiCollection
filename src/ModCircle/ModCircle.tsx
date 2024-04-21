@@ -4,9 +4,10 @@ import { Mod } from '../ModList/ModList';
 
 interface ModCircleProps {
     mods: Mod[];
+    username: string;
 }
 
-const ModCircle: React.FC<ModCircleProps> = ({ mods }) => {
+const ModCircle: React.FC<ModCircleProps> = ({ mods, username }) => {
     return (
         <>
             {mods.map((mod, index) => (

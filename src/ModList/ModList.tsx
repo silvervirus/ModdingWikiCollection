@@ -30,7 +30,7 @@ export default function ModList(): JSX.Element {
                 <h2>{username} Mods</h2>
                 <div className="table">
                     <div className="tableRow">
-                        <ModCircle mods={mods} />
+                        <ModCircle mods={mods} username={username} />
                     </div>
                 </div>
             </div>
