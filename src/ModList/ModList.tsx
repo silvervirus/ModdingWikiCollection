@@ -17,7 +17,7 @@ export default function ModList(): JSX.Element {
     const [mods, setMods] = useState<Mod[]>([]);
 
     useEffect(() => {
-        fetch(`${username}.json`)
+        fetch(`$./{username}.json`)
             .then(response => response.json())
             .then((data: { mods: Mod[] }) => setMods(data.mods))
             .catch(error => console.error('Error fetching mods:', error));
@@ -30,10 +30,12 @@ export default function ModList(): JSX.Element {
                 <h2>{username} Mods</h2>
                 <div className="table">
                     <div className="tableRow">
-                        <ModCircle mods={mods} username={username} />
+                        <ModCircle mods={mods} />
                     </div>
                 </div>
             </div>
         </>
     );
 }
+
+export default ModList;
