@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import NavBar from '../NavBar/NavBar';
 import ModCircle from '../ModCircle/ModCircle';
 import './ModList.css';
@@ -17,7 +17,7 @@ export default function ModList(): JSX.Element {
     const [mods, setMods] = useState<Mod[]>([]);
 
     useEffect(() => {
-        fetch(`$./{username}.json`)
+        fetch(`${username}.json`)
             .then(response => response.json())
             .then((data: { mods: Mod[] }) => setMods(data.mods))
             .catch(error => console.error('Error fetching mods:', error));
@@ -37,5 +37,3 @@ export default function ModList(): JSX.Element {
         </>
     );
 }
-
-export default ModList;
