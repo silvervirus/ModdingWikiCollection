@@ -3,10 +3,7 @@ import NavBar from '../NavBar/NavBar';
 import ModCircle from '../ModCircle/ModCircle';
 import './ModList.css';
 import { useParams } from 'react-router-dom';
-
-interface User {
-    mods: Mod[];
-}
+import { User } from '../Data/UserData';
 
 interface Mod {
     modname: string;
@@ -18,19 +15,14 @@ interface Mod {
 
 export default function ModList(): JSX.Element {
     const { username } = useParams<{ username: string }>();
-    const userJsonUrl = `/silvervirus/ModdingWikiCollection/src/ModList/${username}.json`;
-
-    const [userData, setUserData] = React.useState<User | null>(null);
+    const [mods, setMods] = React.useState<Mod[]>([]);
 
     React.useEffect(() => {
-        fetch(userJsonUrl)
+        fetch(`./Data/${username}.json`)
             .then(response => response.json())
-            .then((data: User) => setUserData(data))
-            .catch(error => console.error('Error fetching user data:', error));
-    }, [userJsonUrl]);
-
-    if (!userData)
-        return <span>Loading...</span>;
+            .then((data: { mods: Mod[] }) => setMods(data.mods))
+            .catch(error => console.error('Error fetching mods:', error));
+    }, [username]);
 
     return (
         <>
@@ -39,7 +31,11 @@ export default function ModList(): JSX.Element {
                 <h2>{username}'s Mods</h2>
                 <div className="table">
                     <div className="tableRow">
-                        <ModCircle mods={userData.mods} />
+                        {mods.map((mod, index) => (
+                            <div key={index} className="circle-container">
+                                <ModCircle username={mod.username} onClick={() => console.log('Circle clicked')} />
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
