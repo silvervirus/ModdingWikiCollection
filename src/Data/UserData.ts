@@ -4,7 +4,7 @@ export interface User {
 }
 
 export const UserData: {[name: string]: User[]} = {
-	["SN-Legacy"]: [
+	["Legacy"]: [
 		{ "username": "Lee23", "avatar": "https://avatars.githubusercontent.com/u/31892011?v=4" },
 		{ "username": "ECM", "avatar": "https://cdn.discordapp.com/avatars/831659483276247050/0c8ab782713c46f222f97388b8fbbbe6?size=1024" },
 		{ "username": "MrPurple", "avatar": "https://cdn.discordapp.com/avatars/582697081144344586/94936284d398cbb7e939fcfe6a04e08b?size=1024" },
@@ -23,7 +23,7 @@ export const UserData: {[name: string]: User[]} = {
 		{ "username": "FCS", "avatar": "https://cdn.discordapp.com/icons/508445974935371834/1d36b2652dbf388d4bc5f81e4400e4e6.webp" },
 		{ "username": "Desperationfighter", "avatar": "https://cdn.discordapp.com/avatars/587570420530675731/9a3f5e0cdc3133f61a896789001acf00?size=1024" }
 	],
-	["SN-Stable"]: [
+	["Stable"]: [
 		{ "username": "Lee23", "avatar": "https://avatars.githubusercontent.com/u/31892011?v=4" },
 		{ "username": "ECM", "avatar": "https://cdn.discordapp.com/avatars/831659483276247050/0c8ab782713c46f222f97388b8fbbbe6?size=1024" },
 		{ "username": "MrPurple", "avatar": "https://cdn.discordapp.com/avatars/582697081144344586/94936284d398cbb7e939fcfe6a04e08b?size=1024" },
@@ -42,7 +42,7 @@ export const UserData: {[name: string]: User[]} = {
 		{ "username": "FCS", "avatar": "https://cdn.discordapp.com/icons/508445974935371834/1d36b2652dbf388d4bc5f81e4400e4e6.webp" },
 		{ "username": "Desperationfighter", "avatar": "https://cdn.discordapp.com/avatars/587570420530675731/9a3f5e0cdc3133f61a896789001acf00?size=1024" }
 	],
-	["BZ-Legacy"]: [
+	["BelowZero-Legacy"]: [
 		{ "username": "Lee23", "avatar": "https://avatars.githubusercontent.com/u/31892011?v=4" },
 		{ "username": "ECM", "avatar": "https://cdn.discordapp.com/avatars/831659483276247050/0c8ab782713c46f222f97388b8fbbbe6?size=1024" },
 		{ "username": "MrPurple", "avatar": "https://cdn.discordapp.com/avatars/582697081144344586/94936284d398cbb7e939fcfe6a04e08b?size=1024" },
