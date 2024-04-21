@@ -7,7 +7,7 @@ export interface Mods {
     Description: string;
 	
 }
-export const ModData: {[mod: string]: Mod[]} = {
+export const ModData: {[name: string]: Mods[]} = {
   ["ECM"]: [
     {
       "ModName": "CameraDroneUpgrades",
