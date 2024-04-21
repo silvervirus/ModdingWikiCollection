@@ -3,7 +3,7 @@ import NavBar from '../NavBar/NavBar';
 import ModCircle from '../ModCircle/ModCircle';
 import './ModList.css';
 import { useParams } from 'react-router-dom';
-import { User } from '../Data/UserData';
+import { UserData, User } from '../Data/UserData';
 
 interface Mod {
     modname: string;
@@ -18,7 +18,7 @@ export default function ModList(): JSX.Element {
     const [mods, setMods] = React.useState<Mod[]>([]);
 
     React.useEffect(() => {
-        fetch(`./Data/${username}.json`)
+        fetch(`./${username}.json`)
             .then(response => response.json())
             .then((data: { mods: Mod[] }) => setMods(data.mods))
             .catch(error => console.error('Error fetching mods:', error));
@@ -33,7 +33,7 @@ export default function ModList(): JSX.Element {
                     <div className="tableRow">
                         {mods.map((mod, index) => (
                             <div key={index} className="circle-container">
-                                <ModCircle username={mod.username} onClick={() => console.log('Circle clicked')} />
+                                <ModCircle modname={mod.modname} onClick={() => console.log('Circle clicked')} />
                             </div>
                         ))}
                     </div>
