@@ -2,7 +2,7 @@ import NavBar from '../NavBar/NavBar';
 import Circles from './ModCircle'; // Import Circle component from the correct path
 import './ModList.css';
 import { useParams } from 'react-router-dom';
-import { UserData } from '../Data/ModData';
+import { ModData } from '../Data/ModData';
 import { UserData } from '../Data/UserData';
 
 export default function ModderPage(): JSX.Element {
@@ -13,7 +13,7 @@ export default function ModderPage(): JSX.Element {
     const game = location.game!;
     const Modder = location.Modder!;
     const usersList = UserData[game];
-    const modList = ModData[Modder];
+    const ModList = ModData[Modder];
 
     if (!usersList)
         return <span>Mod list not defined for {Modder}</span>;
