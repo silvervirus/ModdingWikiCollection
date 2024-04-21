@@ -25,6 +25,7 @@ export default function ModList(): JSX.Element {
 
     return (
         <>
+        
             <NavBar />
             <div className="container">
                 <h2>{game} Modders</h2>
