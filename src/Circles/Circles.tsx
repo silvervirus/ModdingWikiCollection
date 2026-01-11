@@ -1,5 +1,5 @@
 import React from 'react';
-import './Circles.css';
+import Circles from '../Circles/Circles';
 import { User } from '../Data/UserData';
 
 interface CircleProps {
@@ -22,3 +22,4 @@ const Circles: React.FC<CircleProps> = ({ users }) => {
 };
 
 export default Circles;
+
