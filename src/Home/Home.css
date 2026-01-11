@@ -1,23 +1,17 @@
-body {
-    background-image: url('/public/Assets/background.jpg'); /* Add the URL of your image */
-    margin: 0; /* Remove default margin */
-    font-family: Arial, sans-serif; /* Set a more standard font */
-}
-
 .container {
-    border: 2px solid blue;
-    padding: 20px;
-    background-color: white; /* Set background color to contrast with blue border */
-    margin: 20px auto; /* Center the container horizontally */
-    max-width: 800px; /* Limit container width for better readability */
-    text-align: center; /* Center text inside container */
-    border-radius: 10px; /* Add rounded corners */
+  border: 2px solid blue;
+  padding: 20px;
+  background-color: white;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .container h1 {
-    color: #07078c; /* Match heading color with background color */
+  color: #07078c;
 }
 
 .container h2 {
-    color: #333; /* Set a darker color for better contrast */
+  color: #333;
 }
