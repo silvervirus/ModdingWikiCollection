@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Home from './pages/Home';
-import ModList from './pages/ModList';
-import ModderPage from './pages/ModderPage';
+import Home from './Home/Home';
+import ModList from './ModList/ModList';
+import ModderPage from './ModCircle/ModderPage';
 
-import './index.css'; // Global CSS, can include body background here
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
