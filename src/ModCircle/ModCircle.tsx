@@ -29,27 +29,32 @@ const ModCircle: React.FC<ModCircleProps> = ({ modderName }) => {
                 <div key={index} className="circle-container">
                     <input type="checkbox" id={`toggle${index}`} className="toggle-input" />
                     <label htmlFor={`toggle${index}`} className="circle" title={mod.modname}>
-                        <img src={mod.image} alt="Photo" className="circle-photo" />
+                        <img src={mod.image} alt={mod.modname} className="circle-photo" />
                     </label>
+
                     <div id={`details${index}`} className="details">
                         <div className="text">
                             <div className="mod-name-background">
-                                <a className="mod-name">{mod.modname} <br /> <a href={mod.download}>Download</a></a>
+                                <span className="mod-name">{mod.modname}</span>
+                                <br />
+                                <a href={mod.download} target="_blank" rel="noopener noreferrer">Download</a>
                             </div>
+
                             <div className="mod-reg-background">
                                 <details>
-                                    <summary className="regsummary"><a className="mod-reg">Mod Requirements</a></summary>
+                                    <summary className="regsummary"><span className="mod-reg">Mod Requirements</span></summary>
                                     <ul className="nested-ul">
                                         {mod.requirements.map((requirement, i) => (
-                                            <li key={i}><a href="#">{requirement}</a></li>
+                                            <li key={i}><span>{requirement}</span></li>
                                         ))}
                                     </ul>
                                 </details>
                             </div>
+
                             <div className="mod-dec-background">
                                 <details>
-                                    <summary className="decsummary"><a className="mod-dec">Mod Description</a></summary>
-                                    <div className="dec-background"> <a className="dec">{mod.description}</a> </div>
+                                    <summary className="decsummary"><span className="mod-dec">Mod Description</span></summary>
+                                    <div className="dec-background"><span className="dec">{mod.description}</span></div>
                                 </details>
                             </div>
                         </div>
