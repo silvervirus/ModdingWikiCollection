@@ -1,21 +1,23 @@
-import { StrictMode } from 'react';
-import ReactDOM from 'react-dom/client'
-import Home from './Home/Home';
-import { HashRouter, Route, Routes } from 'react-router-dom';
-import ModList from './ModList/ModList';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// Create a root for React to live at based on the "root" div
-// Then render Home.tsx in it
-// StrictMode is just a wrapper to help highlight issues
-ReactDOM.createRoot(document.getElementById('root')!)
-    .render(
-        <StrictMode>
-            <HashRouter>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    { /* /mods/:game defines a pattern of /mods/ANYTHING where ANYTHING will be stored in the .game property of the location */}
-                    <Route path="/mods/:game" element={<ModList />} />
-                </Routes>
-            </HashRouter>
-        </StrictMode>
+import Home from './pages/Home';
+import ModList from './pages/ModList';
+import ModderPage from './pages/ModderPage';
+
+import './index.css'; // Global CSS, can include body background here
+
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+
+root.render(
+  <React.StrictMode>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/mods/:game" element={<ModList />} />
+        <Route path="/mods/:game/:Modder" element={<ModderPage />} />
+      </Routes>
+    </Router>
+  </React.StrictMode>
 );
