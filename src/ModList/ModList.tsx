@@ -1,6 +1,6 @@
 import NavBar from '../NavBar/NavBar';
 import Circles from '../Circles/Circles'; // Import Circle component from the correct path
-import './ModList.css';
+import '../ModList/ModList.css';
 import { useParams } from 'react-router-dom';
 import { UserData } from '../Data/UserData';
 
