@@ -9,11 +9,12 @@ Features
  .which includes SubmitMods
  .also includes a way to edit the mod afterwards 
  .name image and about included
+ .downloads are now version numbers 
 .AdminPanel 
  .allows to edit users roles 
  .allows to edit any mod submited
  .allows to edit any supportdocs
-
+ 
 .user Profile 
  .includes editing name image and about 
 
@@ -23,3 +24,6 @@ non users
 Main page 
  .search bar 
  . filters for legacy . 2023 . 2025 . stable 
+updates 
+.fixed submitmods page 
+.downloads are now version numbers
