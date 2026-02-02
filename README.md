@@ -5,15 +5,25 @@ more features are coming as modders use the site.
 Features 
 >
 .Signup / Login
-.User / Modder 
-.ModderProfile 
+>
+.User / Modder
+>
+.ModderProfile
+>
  .which includes SubmitMods
- .also includes a way to edit the mod afterwards 
+ >
+ .also includes a way to edit the mod afterwards
+> 
  .name image and about included
- .downloads are now version numbers 
+ >
+ .downloads are now version numbers
+> 
 .AdminPanel 
- .allows to edit users roles 
+>
+ .allows to edit users roles
+>
  .allows to edit any mod submited
+ >
  .allows to edit any supportdocs
  >
 .user Profile
@@ -22,7 +32,8 @@ Features
 >
 non users
 >
-. can view profiles 
+. can view profiles
+> 
 . can view mod profiles
 >
 Main page
