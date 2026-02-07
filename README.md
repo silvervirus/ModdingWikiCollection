@@ -45,4 +45,5 @@ updates
 >
 .fixed submitmods page 
 .downloads are now version numbers
->
+> 
+https://silvervirus.github.io/ModdingWikiCollection/
