@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #eee;
+  background: url('/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+a {
+  color: #7dbaff;
+  text-decoration: none;
+}
+
+input, textarea, button {
+  border-radius: 6px;
+  padding: 0.5rem;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: #294172;
+  color: #fff;
+}
+
